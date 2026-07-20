@@ -140,7 +140,7 @@
     border: 1px solid transparent;
   }
 
-  /* Spin animation for CSS fallback */
+  /* CSS fallback sphere animations */
   @keyframes spin {
     from { transform: translate(-50%, -50%) rotate(0deg); }
     to   { transform: translate(-50%, -50%) rotate(360deg); }
@@ -148,5 +148,17 @@
   @keyframes float {
     0%, 100% { transform: translate(-50%, -50%) translateY(0px); }
     50%       { transform: translate(-50%, -50%) translateY(-12px); }
+  }
+
+  /* Avatar animations */
+  @keyframes avatarWave {
+    0%, 100% { transform: rotate(-8deg); }
+    30%       { transform: rotate(22deg); }
+    60%       { transform: rotate(-4deg); }
+    80%       { transform: rotate(18deg); }
+  }
+  @keyframes avatarBob {
+    0%, 100% { transform: translateY(0px); }
+    50%       { transform: translateY(-9px); }
   }
 }

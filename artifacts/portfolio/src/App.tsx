@@ -8,6 +8,8 @@ import Projects from './components/Projects';
 import Experience from './components/Experience';
 import Education from './components/Education';
 import Contact from './components/Contact';
+import ScrollToTop from './components/ScrollToTop';
+import SparkleEffect from './components/SparkleEffect';
 
 const queryClient = new QueryClient();
 
@@ -22,14 +24,18 @@ function Portfolio() {
       <Experience />
       <Education />
       <Contact />
-      
-      <footer className="py-8 text-center border-t border-border/50 bg-background">
-        <p className="text-muted-foreground font-mono text-sm">
-          &copy; {new Date().getFullYear()} Abhishek Wani. All rights reserved.
-          <br/>
-          <span className="text-xs text-primary/50 mt-2 block tracking-widest uppercase">Designed & Built with React, Three.js & Tailwind</span>
+
+      <footer className="py-10 text-center border-t border-border/40 bg-background">
+        <p className="text-muted-foreground text-sm">
+          © {new Date().getFullYear()} Abhishek Wani — All rights reserved.
+        </p>
+        <p className="text-xs text-muted-foreground/40 mt-2 tracking-widest uppercase">
+          Designed & built with React, Three.js & Tailwind CSS
         </p>
       </footer>
+
+      <ScrollToTop />
+      <SparkleEffect />
     </main>
   );
 }
