@@ -46,11 +46,10 @@ export default function Experience() {
           viewport={{ once: true, margin: "-100px" }}
           className="max-w-4xl mx-auto"
         >
-          <div className="flex items-center gap-4 mb-16 flex-row-reverse">
-            <h2 className="text-4xl md:text-5xl font-bold tracking-tighter text-transparent bg-clip-text bg-gradient-to-l from-primary to-secondary" style={{ fontFamily: 'var(--app-font-display)' }}>
-              RUNTIME_LOG //
-            </h2>
-            <div className="h-px flex-1 bg-gradient-to-l from-secondary/50 to-transparent"></div>
+          <div className="mb-16">
+            <p className="text-sm font-semibold text-secondary uppercase tracking-widest mb-2">Career journey</p>
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground">Experience</h2>
+            <div className="mt-4 h-1 w-16 rounded-full bg-gradient-to-r from-secondary to-primary" />
           </div>
 
           <div className="relative border-l border-border ml-4 md:ml-8 space-y-12">

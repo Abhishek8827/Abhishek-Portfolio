@@ -47,11 +47,10 @@ export default function Projects() {
           viewport={{ once: true, margin: "-100px" }}
           className="max-w-6xl mx-auto"
         >
-          <div className="flex items-center gap-4 mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary" style={{ fontFamily: 'var(--app-font-display)' }}>
-              // EXECUTABLES
-            </h2>
-            <div className="h-px flex-1 bg-gradient-to-r from-primary/50 to-transparent"></div>
+          <div className="mb-16">
+            <p className="text-sm font-semibold text-primary uppercase tracking-widest mb-2">What I've built</p>
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground">Projects</h2>
+            <div className="mt-4 h-1 w-16 rounded-full bg-gradient-to-r from-primary to-secondary" />
           </div>
 
           <div className="grid lg:grid-cols-2 gap-8">
