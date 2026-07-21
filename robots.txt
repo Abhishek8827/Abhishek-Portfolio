@@ -1,2 +1,6 @@
+# Allow all search engine crawlers to read your portfolio
 User-agent: *
 Allow: /
+
+# Point search engines to the portfolio sitemap
+Sitemap: https://Abhishek8827.github.io/Abhishek-Portfolio/sitemap.xml
