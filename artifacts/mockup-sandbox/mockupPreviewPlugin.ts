@@ -39,16 +39,36 @@ export function mockupPreviewPlugin(): Plugin {
       .every((segment) => !segment.startsWith("_"));
   }
 
+  function validateGeneratedImportPath(importPath: string): string {
+    const normalized = path.posix.normalize(importPath);
+
+    if (normalized.startsWith("../..") || normalized.includes("//")) {
+      throw new Error(`Invalid generated import path: ${importPath}`);
+    }
+
+    if (!normalized.startsWith("../components/mockups/")) {
+      throw new Error(`Unexpected generated import path: ${importPath}`);
+    }
+
+    return normalized;
+  }
+
   async function discoverComponents(): Promise<Array<DiscoveredComponent>> {
     const files = await glob(`${MOCKUPS_DIR}/**/*.tsx`, {
       cwd: root,
       ignore: ["**/_*/**", "**/_*.tsx"],
     });
 
-    return files.map((f) => ({
-      globKey: "./" + f.slice("src/".length),
-      importPath: path.posix.relative("src/.generated", f),
-    }));
+    return files.map((f) => {
+      const importPath = validateGeneratedImportPath(
+        path.posix.relative("src/.generated", f),
+      );
+
+      return {
+        globKey: "./" + f.slice("src/".length),
+        importPath,
+      };
+    });
   }
 
   function generateSource(components: Array<DiscoveredComponent>): string {
