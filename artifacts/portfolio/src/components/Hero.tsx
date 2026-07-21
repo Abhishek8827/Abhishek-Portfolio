@@ -102,7 +102,7 @@ export default function Hero() {
               className="w-full sm:w-auto px-7 py-3 rounded-xl text-sm font-semibold bg-primary text-primary-foreground hover:bg-primary/90 hover:shadow-neon-cyan transition-all duration-200">
               View My Work
             </a>
-            <a href="/resume.pdf" target="_blank"
+            <a href="resume.pdf" target="_blank" rel="noreferrer"
               className="w-full sm:w-auto px-7 py-3 rounded-xl text-sm font-semibold bg-white/8 border border-white/15 text-white hover:bg-white/14 hover:border-white/25 backdrop-blur-sm transition-all duration-200 flex items-center justify-center gap-2">
               <Download className="w-4 h-4" /> Download CV
             </a>
