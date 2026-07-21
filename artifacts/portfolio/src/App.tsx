@@ -27,10 +27,7 @@ function Portfolio() {
 
       <footer className="py-10 text-center border-t border-border/40 bg-background">
         <p className="text-muted-foreground text-sm">
-          © {new Date().getFullYear()} Abhishek Wani — All rights reserved.
-        </p>
-        <p className="text-xs text-muted-foreground/40 mt-2 tracking-widest uppercase">
-          Built with React, Vite, Tailwind CSS and polished for portfolio presentation
+          Developed and designed by Abhishek Wani.
         </p>
       </footer>
 
