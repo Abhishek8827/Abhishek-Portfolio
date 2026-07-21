@@ -6,7 +6,7 @@ const PROJECTS = [
     title: 'NexHRMS',
     subtitle: 'Full-Stack HR Management System',
     description:
-      'Production-grade HRMS with 10+ modules and 30+ APIs: employee management, payroll, attendance, leave tracking, onboarding, and reporting. Four-tier RBAC (Admin → HR → Manager → Employee), JWT with httpOnly cookies & refresh rotation, and a glassmorphism dark UI.',
+      'Solved fragmented HR workflows by centralising employee management, payroll, attendance, leave tracking, onboarding, and reporting into one platform. Delivered a secure, role-based system with 30+ APIs and JWT refresh rotation to reduce manual administration and improve compliance.',
     tech: ['React.js', 'Redux Toolkit', 'Node.js', 'Express.js', 'MongoDB Atlas', 'JWT', 'Tailwind CSS', 'Framer Motion'],
     github: 'https://github.com/Abhishek8827/NexHRMS',
     live: 'https://nexhr-api.vercel.app',
@@ -16,7 +16,7 @@ const PROJECTS = [
     title: 'Cloudy',
     subtitle: 'Cloud File Manager (Google Drive Clone)',
     description:
-      'Cloud file management app with Google Sign-In (Firebase Auth), real-time uploads to Firebase Storage, Firestore-backed metadata, and an integrated Gemini AI panel for conversational file interactions. CI/CD via GitHub Actions to GitHub Pages.',
+      'Addressed disorganised cloud storage and low user productivity by creating a Google Drive-style file manager with secure sign-in, real-time uploads, metadata search, and an AI assistant for conversational file operations. Delivered a smoother workflow for accessing and managing files.',
     tech: ['React.js', 'Firebase Auth', 'Firestore', 'Firebase Storage', 'Gemini AI', 'GitHub Actions'],
     github: 'https://github.com/Abhishek8827/Cloudy',
     live: '',
@@ -26,7 +26,7 @@ const PROJECTS = [
     title: 'TVSM School System',
     subtitle: 'Digital School Management System',
     description:
-      'Replaced manual administrative workflows with a full digital solution managing 100+ users including students and staff. Centralised records for departments: academics, accounts, transport, and administration.',
+      'Replaced manual school administration with a centralised platform for 100+ users, improving accuracy across academics, accounts, transport, and staff management. Reduced paperwork and enabled faster reporting for teachers, administrators, and parents.',
     tech: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'Tailwind CSS'],
     github: '',
     live: '',
@@ -36,7 +36,7 @@ const PROJECTS = [
     title: 'LensCulture',
     subtitle: 'Responsive Photo Gallery',
     description:
-      'Visually driven photography portfolio with dynamic filterable categories, a lightbox-style immersive viewer, and optimised image loading across all breakpoints. Combined Bootstrap grid with Tailwind utility classes for fine-grained styling.',
+      'Solved inconsistent portfolio presentation across devices with a responsive gallery, category filters, and immersive lightbox viewing. Optimised image loading for fast performance and better visual storytelling for photographers.',
     tech: ['JavaScript', 'Bootstrap', 'Tailwind CSS', 'HTML5', 'CSS3'],
     github: '',
     live: '',

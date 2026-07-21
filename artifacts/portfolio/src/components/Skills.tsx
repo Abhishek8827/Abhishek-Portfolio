@@ -3,46 +3,52 @@ import { Layers, Server, Database, Wrench, Monitor, Bot, Code2 } from 'lucide-re
 
 const SKILL_CATEGORIES = [
   {
-    title: 'Languages',
+    title: 'Programming Languages',
     icon: Code2,
     color: 'primary',
     skills: ['JavaScript (ES6+)', 'TypeScript', 'HTML5', 'CSS3'],
   },
   {
-    title: 'Frontend',
+    title: 'Frontend Development',
     icon: Layers,
     color: 'secondary',
-    skills: ['React.js', 'Redux Toolkit', 'Next.js', 'Vite', 'Tailwind CSS', 'Framer Motion', 'Axios', 'Responsive Design'],
+    skills: ['React.js', 'Redux Toolkit', 'Next.js', 'Vite', 'Tailwind CSS', 'Framer Motion', 'Responsive Design', 'Accessibility'],
   },
   {
-    title: 'Backend',
+    title: 'Backend Development',
     icon: Server,
     color: 'primary',
-    skills: ['Node.js', 'Express.js', 'RESTful APIs', 'JWT Auth', 'RBAC', 'bcrypt', 'Multer', 'Cloudinary', 'Socket.io'],
+    skills: ['Node.js', 'Express.js', 'RESTful APIs', 'JWT Authentication', 'RBAC', 'Socket.io', 'API Design', 'Server-side Validation'],
   },
   {
-    title: 'Database',
+    title: 'Databases & Storage',
     icon: Database,
     color: 'secondary',
     skills: ['MongoDB', 'MongoDB Atlas', 'Mongoose', 'Firebase Firestore', 'Firebase Storage'],
   },
   {
-    title: 'Tools & DevOps',
+    title: 'DevOps & Project Tooling',
     icon: Wrench,
     color: 'primary',
     skills: ['Git', 'GitHub', 'GitHub Actions (CI/CD)', 'VS Code', 'Vercel', 'Render', 'Postman', 'Firebase Hosting'],
   },
   {
-    title: 'AI & Productivity',
+    title: 'AI & Automation',
     icon: Bot,
     color: 'secondary',
     skills: ['Claude AI', 'ChatGPT', 'Gemini AI', 'Prompt Engineering', 'AI-assisted Debugging'],
   },
   {
-    title: 'Other',
+    title: 'Quality & Testing',
     icon: Monitor,
     color: 'primary',
-    skills: ['WordPress', 'Tally Prime & ERP 9', 'Adobe Photoshop', 'CorelDraw', 'MS Office Suite'],
+    skills: ['Unit Testing', 'Integration Testing', 'E2E Testing', 'Debugging', 'Performance Review'],
+  },
+  {
+    title: 'Design & Productivity',
+    icon: Monitor,
+    color: 'primary',
+    skills: ['Adobe Photoshop', 'CorelDraw', 'WordPress', 'Tally Prime & ERP 9', 'MS Office Suite'],
   },
 ];
 
@@ -76,10 +82,13 @@ export default function Skills() {
           {/* Section heading */}
           <div className="mb-16">
             <p className="text-sm font-semibold text-secondary uppercase tracking-widest mb-2">
-              What I work with
+              Core capabilities
             </p>
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground">Skills</h2>
-            <div className="mt-4 h-1 w-16 rounded-full bg-gradient-to-r from-secondary to-primary" />
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground">Professional Skills</h2>
+            <p className="mt-4 max-w-2xl text-muted-foreground text-sm leading-7">
+              Organized by functional area, this section highlights the technologies and tools I use to deliver reliable web applications, user-friendly interfaces, and secure backend systems.
+            </p>
+            <div className="mt-6 h-1 w-16 rounded-full bg-gradient-to-r from-secondary to-primary" />
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">

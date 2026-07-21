@@ -9,6 +9,7 @@ import Experience from './components/Experience';
 import Education from './components/Education';
 import Contact from './components/Contact';
 import SparkleEffect from './components/SparkleEffect';
+import ScrollToTop from './components/ScrollToTop';
 
 const queryClient = new QueryClient();
 
@@ -42,6 +43,7 @@ export default function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <Portfolio />
+      <ScrollToTop />
       <Toaster />
     </QueryClientProvider>
   );

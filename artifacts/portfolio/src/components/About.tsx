@@ -317,7 +317,7 @@ export default function About() {
               </div>
             </div>
 
-            {/* Animated avatar */}
+            {/* About section video */}
             <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
@@ -325,7 +325,17 @@ export default function About() {
               transition={{ type: 'spring', stiffness: 160, damping: 20, delay: 0.15 }}
               className="flex justify-center"
             >
-              <AnimatedAvatar />
+              <video
+                className="w-full max-w-xs aspect-[9/16] rounded-3xl overflow-hidden border border-border shadow-neon-cyan object-cover"
+                autoPlay
+                muted
+                loop
+                playsInline
+                poster="/about-video-poster.jpg"
+              >
+                <source src="/about-video.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
             </motion.div>
           </div>
         </motion.div>
