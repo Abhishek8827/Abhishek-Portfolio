@@ -25,6 +25,7 @@ This repository contains the source for Abhishek Wani's portfolio website and re
 - Add screenshot/video assets for each featured project
 - Strengthen project summaries with problem, solution, and impact details
 - Add social preview image for Open Graph sharing
+- Add a dark/light theme toggle to the site (planned for tomorrow)
 
 ## Local development
 
