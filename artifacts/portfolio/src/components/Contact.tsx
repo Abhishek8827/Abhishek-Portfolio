@@ -99,7 +99,7 @@ export default function Contact() {
                   className="w-11 h-11 rounded-xl bg-card border border-border flex items-center justify-center text-muted-foreground hover:text-secondary hover:border-secondary/50 hover:shadow-neon-purple transition-all">
                   <Linkedin className="w-5 h-5" />
                 </a>
-                <a href="https://instagram.com/abhishekwani0904" target="_blank" rel="noreferrer"
+                <a href="https://instagram.com/mrweb.dev" target="_blank" rel="noreferrer"
                   aria-label="Instagram"
                   className="w-11 h-11 rounded-xl bg-card border border-border flex items-center justify-center text-muted-foreground hover:text-pink-400 hover:border-pink-400/50 transition-all"
                   style={{ '--tw-shadow-color': 'rgba(244,114,182,0.3)' } as any}>

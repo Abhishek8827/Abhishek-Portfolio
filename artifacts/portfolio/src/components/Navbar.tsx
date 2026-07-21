@@ -43,7 +43,7 @@ export default function Navbar() {
     >
       <div className="container mx-auto px-4 md:px-6 h-16 flex items-center justify-between">
         <a href="#hero" className="text-2xl font-bold tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary" style={{ fontFamily: 'var(--app-font-display)' }}>
-          AW
+          Er. AW
         </a>
 
         {/* Desktop Nav */}

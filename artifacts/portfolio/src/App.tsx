@@ -30,7 +30,7 @@ function Portfolio() {
           © {new Date().getFullYear()} Abhishek Wani — All rights reserved.
         </p>
         <p className="text-xs text-muted-foreground/40 mt-2 tracking-widest uppercase">
-          Designed & built with React, Three.js & Tailwind CSS
+          Built with React, Vite, Tailwind CSS and polished for portfolio presentation
         </p>
       </footer>
 
