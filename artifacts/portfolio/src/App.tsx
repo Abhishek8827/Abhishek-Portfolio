@@ -8,7 +8,6 @@ import Projects from './components/Projects';
 import Experience from './components/Experience';
 import Education from './components/Education';
 import Contact from './components/Contact';
-import ScrollToTop from './components/ScrollToTop';
 import SparkleEffect from './components/SparkleEffect';
 
 const queryClient = new QueryClient();
@@ -34,13 +33,12 @@ function Portfolio() {
         </p>
       </footer>
 
-      <ScrollToTop />
       <SparkleEffect />
     </main>
   );
 }
 
-function App() {
+export default function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <Portfolio />
@@ -48,5 +46,3 @@ function App() {
     </QueryClientProvider>
   );
 }
-
-export default App;

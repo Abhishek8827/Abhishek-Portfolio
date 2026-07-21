@@ -135,23 +135,6 @@ export default function Projects() {
             ))}
           </div>
 
-          {/* GitHub CTA */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            className="mt-12 text-center"
-          >
-            <a
-              href="https://github.com/Abhishek8827"
-              target="_blank"
-              rel="noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-border text-sm font-medium text-muted-foreground hover:text-primary hover:border-primary/40 hover:shadow-neon-cyan transition-all duration-200"
-            >
-              <Github className="w-4 h-4" />
-              View all projects on GitHub
-            </a>
-          </motion.div>
         </motion.div>
       </div>
     </section>
