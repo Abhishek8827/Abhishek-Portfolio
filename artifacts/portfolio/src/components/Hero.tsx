@@ -71,7 +71,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.15 }}
-            className="text-5xl md:text-7xl lg:text-8xl font-extrabold mb-4 text-white drop-shadow-[0_2px_16px_rgba(0,0,0,0.8)]"
+            className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-extrabold mb-4 text-white drop-shadow-[0_2px_16px_rgba(0,0,0,0.8)]"
             style={{ textShadow: '0 2px 24px rgba(0,0,0,0.7), 0 0 40px rgba(0,200,255,0.15)' }}
           >
             Abhishek Wani
@@ -82,9 +82,9 @@ export default function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.7, delay: 0.3 }}
-            className="h-12 flex items-center justify-center mb-10"
+            className="min-h-12 flex items-center justify-center mb-10 px-2"
           >
-            <h2 className="text-xl md:text-2xl font-semibold text-primary drop-shadow-[0_1px_8px_rgba(0,0,0,0.9)]"
+            <h2 className="text-lg sm:text-xl md:text-2xl font-semibold text-primary drop-shadow-[0_1px_8px_rgba(0,0,0,0.9)]"
               style={{ textShadow: '0 1px 12px rgba(0,0,0,0.8)' }}>
               {displayedText}
               <span className="ml-0.5 inline-block w-0.5 h-6 bg-primary align-middle animate-pulse" />
@@ -102,7 +102,7 @@ export default function Hero() {
               className="w-full sm:w-auto px-7 py-3 rounded-xl text-sm font-semibold bg-primary text-primary-foreground hover:bg-primary/90 hover:shadow-neon-cyan transition-all duration-200">
               View My Work
             </a>
-            <a href="resume.pdf" target="_blank" rel="noreferrer"
+            <a href="/resume.pdf" download="Abhishek_Wani_Resume.pdf" target="_blank" rel="noreferrer"
               className="w-full sm:w-auto px-7 py-3 rounded-xl text-sm font-semibold bg-white/8 border border-white/15 text-white hover:bg-white/14 hover:border-white/25 backdrop-blur-sm transition-all duration-200 flex items-center justify-center gap-2">
               <Download className="w-4 h-4" /> Download CV
             </a>

@@ -290,7 +290,7 @@ export default function About() {
             <div className="mt-4 h-1 w-16 rounded-full bg-gradient-to-r from-primary to-secondary" />
           </div>
 
-          <div className="grid md:grid-cols-2 gap-14 items-center">
+          <div className="grid gap-10 md:grid-cols-2 md:gap-14 items-center">
             {/* Bio */}
             <div className="space-y-5 text-muted-foreground text-base leading-relaxed">
               <p>
@@ -323,7 +323,7 @@ export default function About() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ type: 'spring', stiffness: 160, damping: 20, delay: 0.15 }}
-              className="flex justify-center"
+              className="hidden md:flex justify-center"
             >
               <video
                 className="w-full max-w-xs aspect-[9/16] rounded-3xl overflow-hidden border border-border shadow-neon-cyan object-cover"
